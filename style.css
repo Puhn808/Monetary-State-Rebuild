@@ -1,0 +1,255 @@
+body {
+background: #000;
+color: #00ff41;
+font-family: 'Courier New', monospace;
+margin: 0;
+overflow: hidden;
+}
+
+#viewport {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+ #menu-screen {
+position: fixed;
+inset: 0; display: flex;
+justify-content: center;
+align-items: center;
+background: #000;
+z-index: 9000;
+text-align: center;
+}
+
+#dev-credits {
+    margin-top: 40px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+.dev-title {
+    font-size: 1.1em;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+    color: #00ff41;
+    text-shadow: 0 0 6px #00ff41;
+}
+
+.dev-names {
+    font-size: 1.35em;
+    line-height: 1.9;
+    letter-spacing: 2px;
+    color: #00ff41;
+}
+
+#main-action-btn {
+    pointer-events: auto;
+    display: block;
+}
+
+ #main-title {
+font-size: 5.5em;
+letter-spacing: 15px;
+margin: 0;
+text-shadow: 0 0 20px #00ff41;
+}
+
+.play-launch {
+width: 350px;
+padding: 20px;
+font-size: 1.8em;
+font-weight: bold;
+border: 2px solid #00ff41;
+color: #00ff41;
+background : none;
+cursor : pointer;
+}
+
+.play-launch:hover {
+background: #00ff41;
+color: #000;
+}
+    
+ #loading-overlay {
+position: fixed;
+inset: 0;
+background: #000;
+z-index: 10000;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+ #loading-container {
+width: 400px;
+text-align: center;
+}
+
+ #loading-text {
+color: #00ff41;
+font-size: 1.2em;
+letter-spacing: 3px;
+margin-bottom: 20px;
+}
+
+ #loading-bar-container {
+width: 100%;
+height: 4px;
+background: #002200;
+border-radius: 2px;
+overflow: hidden; 
+}
+
+ #loading-bar-fill {
+width: 0%;
+height: 100%;
+background: #00ff41;
+box-shadow: 0 0 10px #00ff41;
+transition: 0.3s;
+}
+
+ #temporal-engine {
+position: absolute;
+top: 20px;
+right: 20px;
+background: #000;
+border: 3px solid #00ff41;
+border-radius: 15px;
+padding: 15px;
+z-index: 9000;
+text-align: center;
+display: none;
+}
+
+ #game-clock {
+font-size: 1.8em;
+font-weight: bold;
+margin-bottom: 10px;
+color: #00ff41;
+}
+
+ .time-btn { 
+background: none;
+border: 2px solid #00ff41;
+color: #00ff41;
+border-radius: 5px; cursor: pointer;
+font-size: 1.2em;
+padding: 5px 10px;
+}
+
+ #speed-meter {
+display: flex;
+gap: 4px;
+padding: 5px;
+border: 1px solid #00ff41;
+border-radius: 4px;
+justify-content: center;
+}
+
+.speed-bar {
+width: 8px;
+height: 18px;
+background: #003300;
+}
+
+ .speed-bar.active {
+background: #00ff41;
+}
+
+ #tactical-hud {
+background: #000;
+border: 2px solid #00ff41;
+padding: 25px;
+width: 360px;
+}
+
+#management-window {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    max-height: 80vh;
+}
+
+#scroll-engine {
+    flex: 1;
+    overflow-y: auto;
+    padding-bottom: 60px;
+    box-sizing: border-box;
+}
+
+ #left-wing-stack {
+position: absolute;
+top: 20px;
+left: 20px;
+z-index: 5000;
+}
+
+ .side-panel {
+background: #000;
+border: 2px solid #00ff41;
+padding: 25px;
+padding-bottom: 60px;
+display: none;
+flex-direction: column;
+width: 360px;
+margin-top: 10px;
+max-height: 80vh;
+overflow-y: hidden;
+box-sizing: border-box;
+}
+
+.side-panel > * {
+margin-bottom: 12px;
+}
+
+.side-panel::-webkit-scrollbar {
+width: 6px;
+}
+
+.side-panel::-webkit-scrollbar-thumb {
+background: #00ff41;
+}
+
+ .big-neon-btn {
+background: #000;
+border: 2px solid #00ff41;
+color: #00ff41;
+padding: 15px;
+width: 100%;
+font-family: inherit;
+font-weight: bold;
+cursor: pointer;
+margin-top: 10px;
+}
+
+ .fixed-corner-btn {
+position: absolute;
+bottom: 30px;
+right: 30px;
+padding: 20px 50px;
+border: 3px solid #00ff41;
+background: #000;
+color: #00ff41;
+font-family: inherit;
+font-weight: bold;
+cursor: pointer;
+font-size: 1.4em;
+z-index: 8000;
+}
+    
+ .land {
+fill: #001a00;
+stroke: #00ff41;
+stroke-width: 0.5px;
+cursor: pointer;
+}
+ 
+.territory-pin {
+fill: #00ff41;
+cursor: pointer;
+filter: drop-shadow(0 0 3px #00ff41);
+}
